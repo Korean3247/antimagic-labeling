@@ -1,40 +1,64 @@
-*Antimagic Labeling of Complete Graphs (K_n)*
-
----
-
 ## **Overview**
 
 This repository contains the code and computational results for determining whether the complete graphs
-[
-K_8 \quad \text{and} \quad K_{12}
-]
-admit ((a,1))-antimagic labelings.
-The project is based on the definitions and results from ongoing work on antimagic labelings of zero-divisor graphs and related families.
+**K₈** and **K₁₂** admit **(a,1)-antimagic labelings**.
+The project is based on ongoing work on antimagic labelings of zero-divisor graphs and related graph families.
 
-The computation uses Google OR-Tools (CP-SAT solver) to explicitly construct an ((a,1))-antimagic labeling whenever it exists.
+The computation uses Google OR-Tools (CP-SAT solver) to explicitly construct an (a,1)-antimagic labeling whenever it exists.
 
 ---
 
 ## **Background**
 
-A graph (G = (V,E)) with (|E| = m) is **((a,1))-antimagic** if there exists a bijection
-[
-f : E \to {1,2,\ldots,m}
-]
-such that the induced vertex-sums
-[
-g(v) = \sum_{\text{edges } e \ni v} f(e)
-]
-are all distinct and form the consecutive sequence
-[
-{a, a+1, \ldots, a + |V| - 1}.
-]
+A graph **G = (V, E)** with **|E| = m** is **(a,1)-antimagic** if there exists a bijection
 
-From Lemma 2.3/3.3 of our manuscript, any such labeling must satisfy
-[
-a = \frac{m(m+1) - \frac{n(n-1)}{2}}{n},
-]
-which strongly restricts when ((a,1))-antimagic labelings are possible.
+```
+f : E → {1, 2, ..., m}
+```
+
+such that the induced vertex-sums
+
+```
+g(v) = sum of f(e) over all edges e incident to v
+```
+
+are all distinct and form the consecutive sequence
+
+```
+a, a+1, ..., a + |V| - 1
+```
+
+From Lemma 2.3/3.3 of our manuscript, the required parameter **a** must satisfy:
+
+```
+a = ( m(m+1) - n(n-1)/2 ) / n
+```
+
+This formula strongly restricts when an (a,1)-antimagic labeling is possible.
+
+---
+
+## **Results**
+
+Using constraint programming, this project confirms:
+
+### ✔ **K₈ is (98,1)-antimagic**
+
+The solver constructs a valid labeling with vertex sums:
+
+```
+98, 99, 100, 101, 102, 103, 104, 105
+```
+
+### ✔ **K₁₂ is (363,1)-antimagic**
+
+The solver constructs a valid labeling with vertex sums:
+
+```
+363, 364, ..., 374
+```
+
+These results complete the two previously unknown entries in the study of (a,1)-antimagic complete graphs.
 
 ---
 
