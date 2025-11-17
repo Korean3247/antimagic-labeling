@@ -64,7 +64,7 @@ These results complete the two previously unknown entries in the study of ((a,1)
 
 ```
 solve_kn_antimagic.py   # OR-Tools CP-SAT solver for (a,1)-antimagic labeling
-draw_kn_labeling.py     # Visualization script (or Jupyter notebook)
+analysis.py     # Visualization script (or Jupyter notebook)
 K8_antimagic.png        # Labeled diagram for K8
 K12_antimagic.png       # Labeled diagram for K12
 README.md               # This file
