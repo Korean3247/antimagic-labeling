@@ -66,14 +66,14 @@ These results complete the two previously unknown entries in the study of (a,1)-
 
 Using constraint programming, this project confirms:
 
-### ✔ **(K_8) is ((98,1))-antimagic**
+### ✔ **(K_8) is (98,1)-antimagic**
 
 The solver constructs a valid labeling with vertex sums
 [
 {98, 99, 100, 101, 102, 103, 104, 105}.
 ]
 
-### ✔ **(K_{12}) is ((363,1))-antimagic**
+### ✔ **(K_12) is (363,1)-antimagic**
 
 The solver constructs a valid labeling with vertex sums
 [
