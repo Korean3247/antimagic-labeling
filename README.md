@@ -70,14 +70,14 @@ Using constraint programming, this project confirms:
 
 The solver constructs a valid labeling with vertex sums
 [
-{98,99,100,101,102,103,104,105}.
+{98, 99, 100, 101, 102, 103, 104, 105}.
 ]
 
 ### ✔ **(K_{12}) is ((363,1))-antimagic**
 
 The solver constructs a valid labeling with vertex sums
 [
-{363, 364, \ldots, 374}.
+{363, 364, ..., 374}.
 ]
 
 These results complete the two previously unknown entries in the study of ((a,1))-antimagic complete graphs.
