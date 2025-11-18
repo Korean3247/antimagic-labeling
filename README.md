@@ -132,10 +132,10 @@ draw_kn_labeling_from_result(result, save_path="K8.png")
 
 ### **K₈ (98,1)-antimagic labeling**
 
-![K8 Antimagic](K8_antimagic.png)
+<img width="2876" height="2979" alt="k8_antimagic" src="https://github.com/user-attachments/assets/5a116180-e81b-4c87-804a-e18c15e60983" />
 
 ### **K₁₂ (363,1)-antimagic labeling**
 
-![K12 Antimagic](K12_antimagic.png)
+<img width="2897" height="2979" alt="k12_antimagic" src="https://github.com/user-attachments/assets/f8aa0d63-ad6d-4b2e-b01b-f689713cc8b3" />
 
 ---
